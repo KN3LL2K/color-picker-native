@@ -8,7 +8,7 @@ import {
   Navigator,
   TouchableHighlight
 } from 'react-native';
-
+ 
 import styles from './components/styles.js';
 import Home from './components/Home.js';
 import Login from './components/Login.js';
