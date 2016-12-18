@@ -56,10 +56,10 @@ export default class Profile extends Component {
   render() {
     return (
       <ScrollView style={styles.container}>
-        <Text style={styles.colorName}>
+        <Text style={styles.userName}>
           {this.props.user.username}
         </Text>
-        <Text style={styles.colorName}>
+        <Text style={styles.subTitle}>
           Swatches you've liked:
         </Text>
         <View>
@@ -70,7 +70,7 @@ export default class Profile extends Component {
             )
           }) : null}
         </View>
-        <Text style={styles.colorName}>
+        <Text style={styles.subTitle}>
           Swatches you've created:
         </Text>
         <View>

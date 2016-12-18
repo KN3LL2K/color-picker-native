@@ -19,7 +19,7 @@ export default class Swatch extends Component {
   render() {
     return (
       <TouchableHighlight onPress={() => {return this.props.handleClick(this.props.color)}}>
-        <View>
+        <View style={styles.swatch}>
           <Text style={styles.colorName}>
             {this.props.color.name}:
           </Text>

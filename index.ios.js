@@ -86,10 +86,11 @@ export default class Colorz extends Component {
                 if ( route ) {
                   switch (route.id) {
                     case "Login":
-                      break;
+                    case "Profile":
+                      break
                     case "Color":
                     default:
-                      if ( this.state.user ) {
+                    if ( this.state.user ) {
                         return (
                           <TouchableHighlight onPress={() => {return navigator.push({id: "Profile", title: 'Profile'});}}>
                             <Text style={styles.colorName}>Profile</Text>

@@ -2,12 +2,7 @@ import { StyleSheet } from 'react-native';
 
 module.exports = StyleSheet.create({
   swatch: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'white',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    marginBottom: 10
   },
   navigator: {
     flex: 1,
@@ -19,10 +14,23 @@ module.exports = StyleSheet.create({
     textAlign: 'center',
     marginTop: 5
   },
-  colorName: {
-    fontSize: 10,
+  userName: {
+    fontSize: 18,
     textAlign: 'left',
     margin: 10,
+    marginBottom: 5
+  },
+  subTitle: {
+    fontSize: 10,
+    textAlign: 'center',
+    margin: 10,
+    marginBottom: 5
+  },
+  colorName: {
+    fontSize: 12,
+    textAlign: 'left',
+    margin: 10,
+    marginBottom: 5
   },
   colorLikes: {
     fontSize: 10,

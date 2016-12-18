@@ -89,7 +89,8 @@ export default class Login extends Component {
           component.props.setUser(res)
           // alert(`Success! You may now access protected content.`)
           // Redirect to previous screen
-          component.props.navigator.push({id: "Profile", title: "Profile"});
+          // component.props.navigator.push({id: "Profile", title: "Profile"});
+          component.props.navigator.pop()
         }
       })
       .catch((e) => {
