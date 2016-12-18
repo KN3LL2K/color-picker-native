@@ -8,12 +8,13 @@ import {
   Navigator,
   TouchableHighlight
 } from 'react-native';
- 
+
 import styles from './components/styles.js';
 import Home from './components/Home.js';
 import Login from './components/Login.js';
 import Profile from './components/Profile.js';
 import Color from './components/Color.js';
+import ButtonBar from './components/ButtonBar.js';
 
 export default class Colorz extends Component {
   constructor(props) {

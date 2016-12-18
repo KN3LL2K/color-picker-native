@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 
 module.exports = StyleSheet.create({
   swatch: {
@@ -60,5 +60,25 @@ module.exports = StyleSheet.create({
   centering: {
     alignItems: 'center',
     justifyContent: 'center'
+  },
+  cameraContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF'
+  },
+  preview: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    height: Dimensions.get('window').height,
+    width: Dimensions.get('window').width
+  },
+  bottomBar: {
+    flex: 1,
+    backgroundColor: 'red',
+    bottom: 0,
+    justifyContent: 'center',
+    alignItems: 'center'
   }
 });

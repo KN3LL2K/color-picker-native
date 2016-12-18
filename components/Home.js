@@ -13,6 +13,8 @@ import Swatch from './Swatch.js';
 
 import styles from './styles.js';
 
+
+
 export default class Home extends Component {
   constructor(props) {
     super(props);
