@@ -6,7 +6,8 @@ import {
   View,
   ScrollView,
   Navigator,
-  TouchableHighlight
+  TouchableHighlight,
+  Image
 } from 'react-native';
 import styles from './styles.js';
 
@@ -19,16 +20,24 @@ export default class ButtonBar extends Component {
   }
 
 
-  handleClick(color) {
-    this.props.navigator.push({id: "Camera"});
+  cameraPress() {
+    this.props.navigator.push({id: "ColorCamera"});
+  }
+
+  galleryPress() {
+    this.props.navigator.push({id: "Gallery"});
   }
 
   render() {
     return (
       <View style={styles.bottomBar}>
-        
-      <Text>BOTTOM BUTTON BAR GOES HERE</Text>
+        <TouchableHighlight onPress={this.galleryPress.bind(this)}>
+          <Image source={require('../img/gallery.png')} />
+        </TouchableHighlight>
 
+        <TouchableHighlight onPress={this.cameraPress.bind(this)}>
+          <Image source={require('../img/photo-camera.png')} />
+        </TouchableHighlight>
       </View>
 
 

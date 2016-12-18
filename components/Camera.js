@@ -33,7 +33,7 @@ export default class ColorCamera extends Component {
           style={styles.preview}
           aspect={Camera.constants.Aspect.fill}>
           <TouchableHighlight onPress={this.takePicture.bind(this)}>
-          <View style={{height:50, width:50, backgroundColor: 'white'}}></View>
+          <View style={styles.capture}></View>
           </TouchableHighlight>
         </Camera>
       </View>

@@ -15,6 +15,7 @@ import Login from './components/Login.js';
 import Profile from './components/Profile.js';
 import Color from './components/Color.js';
 import ButtonBar from './components/ButtonBar.js';
+import ColorCamera from './components/Camera.js'
 
 export default class Colorz extends Component {
   constructor(props) {
@@ -55,6 +56,8 @@ export default class Colorz extends Component {
                   return <Profile navigator={nav} user={this.state.user} />
                 case "Login":
                   return <Login navigator={nav} setUser={this.setUser.bind(this)} />
+                case "ColorCamera":
+                  return <ColorCamera navigator={nav} />
                 default:
                   return <Home navigator={nav} />
             }

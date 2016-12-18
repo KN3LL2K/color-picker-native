@@ -12,6 +12,7 @@ import {
 import Swatch from './Swatch.js';
 
 import styles from './styles.js';
+import ButtonBar from './ButtonBar.js';
 
 
 
@@ -40,13 +41,16 @@ export default class Home extends Component {
 
   render() {
     return (
-      <ScrollView style={styles.container}>
-        {this.state.colors !== null ? this.state.colors.map( (color, index) => {
-          return (
-            <Swatch key={index} handleClick={this.handleClick.bind(this)} color={color} />
-          )
-        }) : null}
-      </ScrollView>
+      <View style={{flex: 1}}>
+        <ScrollView style={styles.container}>
+          {this.state.colors !== null ? this.state.colors.map( (color, index) => {
+            return (
+              <Swatch key={index} handleClick={this.handleClick.bind(this)} color={color} />
+            )
+          }) : null}
+        </ScrollView>
+        <ButtonBar navigator={this.props.navigator} />
+      </View>
     );
   }
 }

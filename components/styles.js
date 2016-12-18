@@ -75,10 +75,20 @@ module.exports = StyleSheet.create({
     width: Dimensions.get('window').width
   },
   bottomBar: {
-    flex: 1,
-    backgroundColor: 'red',
-    bottom: 0,
-    justifyContent: 'center',
-    alignItems: 'center'
+    flex: 0,
+    backgroundColor: 'white',
+    // bottom: 0,
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    flexDirection: 'row',
+    padding: 5
+  },
+  capture: {
+    flex: 0,
+    backgroundColor: '#fff',
+    borderRadius: 5,
+    borderColor: '#000',
+    padding: 10,
+    margin: 40
   }
 });
