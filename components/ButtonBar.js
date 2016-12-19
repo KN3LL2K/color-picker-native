@@ -14,9 +14,7 @@ import styles from './styles.js';
 export default class ButtonBar extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      colors: null
-    };
+  
   }
 
 
